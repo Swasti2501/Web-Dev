@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon-like E-Commerce Store</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Amazon-like header with logo, search bar, and navigation -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="logodesign.jpg" alt="Amazon Logo">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Search for products...">
+                </div>
+                <div class="col-md-3">
+                    <!-- Navigation links (e.g., Account, Cart) -->
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" id="accountButton" href="#">Your Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="cartButton" href="#">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h1>Featured Products</h1>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="product1.jpg" class="card-img-top" alt="White T-Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">White T-Shirt</h5>
+                        <p class="card-text">The J.Crew Broken-In Short-Sleeve White T-shirt hit all the right notes: It fit most of our testers nicely, was well constructed, and felt comfortable and light. </p>
+                        <p class="card-text">Rs. 99.99</p>
+                        <button class="btn btn-primary add-to-cart" data-name="White T-Shirt" data-price="99.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="product2.jpg" class="card-img-top" alt="Black and Red T-Shirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Black and Red T-shirt</h5>
+                        <p class="card-text">A stylish men's t-shirt featuring a striking black and red color combination, combining a classic design with bold, eye-catching colors for a fashionable and versatile addition to your wardrobe.</p>
+                        <p class="card-text">Rs. 149.99</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Black and Red T-Shirt" data-price="149.99">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="product3.jpg" class="card-img-top" alt="Blue Sweatshirt">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Sweatshirt</h5>
+                        <p class="card-text">A comfortable and cozy blue sweatshirt, perfect for casual wear and chilly days, offering both warmth and a relaxed style in a timeless blue hue.</p>
+                        <p class="card-text">Rs. 210.00</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Blue Sweatshirt" data-price="210.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="product4.jpg" class="card-img-top" alt="Yashika">
+                    <div class="card-body">
+                        <h5 class="card-title">Yashika</h5>
+                        <p class="card-text">Women Art Silk Sarees SDPL-SDPL-RAJRANI</p>
+                        <p class="card-text">Rs. 249.00</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Yashika" data-price="249.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="product5.jpg" class="card-img-top" alt="EthnicJunction">
+                    <div class="card-body">
+                        <h5 class="card-title">EthnicJunction</h5>
+                        <p class="card-text">Women's Silk Blend Woven Banarasi Saree With Blouse Piece</p>
+                        <p class="card-text">Rs. 345.00</p>
+                        <button class="btn btn-primary add-to-cart" data-name="EthnicJunction" data-price="345.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="product6.jpg" class="card-img-top" alt="Silk Saree">
+                    <div class="card-body">
+                        <h5 class="card-title">Silk Saree</h5>
+                        <p class="card-text">SGF11-Women's Kanjivaram Soft Silk Handloom Saree Golden Zari With Blouse Piece</p>
+                        <p class="card-text">Rs. 1499.00</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Silk Saree" data-price="1499.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="product7.jpg" class="card-img-top" alt="Kotty">
+                    <div class="card-body">
+                        <h5 class="card-title">Kotty</h5>
+                        <p class="card-text">Womens High Rise Cotton Lycra Solid Jeans</p>
+                        <p class="card-text">Rs. 649.00</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Kotty" data-price="649.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="product8.jpg" class="card-img-top" alt="Kotty">
+                    <div class="card-body">
+                        <h5 class="card-title">Kotty</h5>
+                        <p class="card-text">Women's Relaxed Jeans</p>
+                        <p class="card-text">Rs. 499.00</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Kotty" data-price="499.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="product9.jpg" class="card-img-top" alt="Ben Martin">
+                    <div class="card-body">
+                        <h5 class="card-title">Ben Martin</h5>
+                        <p class="card-text">Men's Relaxed Fit Jeans</p>
+                        <p class="card-text">Rs. 628.00</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Ben Martin" data-price="628.00">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Your Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartTableBody">
+                            <!-- Cart items will be displayed here -->
+                        </tbody>
+                    </table>
+                    <p>Total: $<span id="cartTotal">0.00</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Information Modal -->
+    <div class="modal fade" id="accountModal" tabindex="-1" role="dialog" aria-labelledby="accountModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="accountModalLabel">Your Account Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Name: John Doe</p>
+                    <p>Email: john.doe@example.com</p>
+                    <!-- Add more account information as needed -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

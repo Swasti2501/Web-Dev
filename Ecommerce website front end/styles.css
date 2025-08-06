@@ -1,0 +1,48 @@
+/* Custom CSS for Amazon-like E-Commerce Store */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #232f3e;
+    padding: 10px 0;
+}
+
+header img {
+    width: 120px;
+}
+
+.form-control {
+    border-radius: 25px;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+/* Custom styles for product images */
+.card-img-top {
+    max-height: 250px;
+    object-fit: contain;
+}
+
+/* Additional styles can be added to further match Amazon's design */
+/* Custom CSS for your E-Commerce Store */
+/* ... (existing CSS styles) ... */
+
+/* Additional styles for account information modal */
+.modal-content {
+    border-radius: 0;
+}
+
+/* Additional styles for account information */
+#accountModal .modal-body {
+    font-size: 1.1rem;
+}
+
+/* Additional styles for cart and checkout modal */
+.modal-content {
+    border-radius: 0;
+}
+
+/* Additional styles can be added for the cart and checkout process */

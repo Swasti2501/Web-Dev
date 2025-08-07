@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaas College of Engineering and Technology</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cooper+Black">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .logo{
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+        }
+        /* Set a background color and font styles for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hwb(192 45% 20%);
+            color: hsl(241, 89%, 25%); /* Text color */
+            font-size: 16px; /* Base font size for the entire page */
+        }
+
+        /* Style the header section */
+        header {
+            background-color: hsl(241, 89%, 25%); /* Header background color */
+            color: #fff;
+            padding: 8px 0;
+            text-align: left;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Apply the Cooper Black font to the institute name */
+        .header-container h1 {
+            font-family: 'Cooper Black', sans-serif;
+            font-size: 36px;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+            font-size: 18px; 
+        }
+        nav ul li a:hover {
+            color: hsl(281, 91%, 54%); 
+        }
+        /* Style the hero section */
+        #hero {
+            background-image: url('hero-background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: #1d0268;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero-content h1 {
+            font-size: 48px; /* Larger font size for a bold statement */
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: 44px; /* Larger font size for emphasis */
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px; /* Larger button size */
+            background-color: hsl(224, 87%, 62%); /* Button background color */
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px; /* Rounded corners */
+            transition: background-color 0.3s;
+            font-size: 20px; /* Font size for buttons */
+        }
+        .btn:hover {
+            background-color: hwb(281 12% 4%); /* Hover color for buttons */
+        }
+
+        /* Style the other sections as needed */
+        .section {
+            padding: 40px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h2 {
+            font-size: 28px; /* Larger font size for section headings */
+            margin-bottom: 20px;
+        }
+        #about {
+            font-family: "Goudy Bookletter 1911", sans-serif; 
+            font-size: 20px; 
+            font-style: italic; /* Adjust the font weight as needed (e.g., bold, normal) */
+            color: hsl(241, 89%, 25%)     ; /* Adjust the text color as needed */
+        }
+        #courses {
+            font-family: "Goudy Bookletter 1911", sans-serif; 
+            font-size: 20px; /* Adjust the font size as needed */
+            font-style: italic; /* Adjust the font weight as needed (e.g., bold, normal) */
+            color: hsl(241, 89%, 25%)     ; /* Adjust the text color as needed */
+        }
+        #admissions {
+            font-family: "Goudy Bookletter 1911", sans-serif; 
+            font-size: 20px; /* Adjust the font size as needed */
+            font-style: italic; /* Adjust the font weight as needed (e.g., bold, normal) */
+            color: hsl(241, 89%, 25%)     ; /* Adjust the text color as needed */
+        }
+        #contact {
+            font-family: "Goudy Bookletter 1911", sans-serif; 
+            font-size: 20px; /* Adjust the font size as needed */
+            font-style: italic; /* Adjust the font weight as needed (e.g., bold, normal) */
+            color: hsl(241, 89%, 25%)     ; /* Adjust the text color as needed */
+        }
+        footer {
+            background-color: hsl(241, 89%, 25%); /* Footer background color */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0; /* More padding for better separation */
+            font-size: 18px; /* Font size for footer text */
+        }
+
+        /* Add responsive styles for smaller screens if needed */
+        @media (max-width: 768px) {
+            /* ... (previous responsive styles) ... */
+
+            /* Adjust font size for smaller screens */
+            body {
+                font-size: 18px;
+            }
+            nav ul li a {
+                font-size: 16px;
+            }
+            .hero-content h1 {
+                font-size: 36px;
+            }
+            .hero-content p {
+                font-size: 18px;
+            }
+            .btn {
+                font-size: 16px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            footer {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="logodesign.jpg" alt="Vaas College Logo" class="logo"> 
+            <h1>Vaas College of Engineering and Technology</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Vaas College of Engineering and Technology</h1>
+            <p>Your Gateway to Quality Education</p>
+            <a href="#courses" class="btn">Explore Our Courses</a>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Vaas College of Engineering and Technology, a distinguished institution committed to excellence in education and innovation. Established in 1985, our college has a rich history of shaping young minds and fostering a culture of academic brilliance. Our dedicated faculty members are experts in their respective fields and are passionate about nurturing the talents of our students. We believe in holistic development and offer a wide range of undergraduate and postgraduate programs to cater to diverse interests. With state-of-the-art facilities and a commitment to practical learning, we ensure that our students are well-prepared for the challenges of the professional world. Join us at Vaas College and embark on a journey of knowledge, innovation, and personal growth. Together, we'll build a brighter future.</p>
+        </div>
+    </section>
+    <section id="courses" class="section">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <ul class="course-list">
+               <li><img src="course1.jpg" alt="Course 1 Image"></li>
+               <li><img src="course2.jpg" alt="Course 2 Image"></li>
+               <li><img src="course3.jpg" alt="Course 3 Image"></li>
+               <li><img src="course4.jpg" alt="Course 4 Image"></li>
+               <li><img src="course5.jpg" alt="Course 5 Image"></li>
+               <li><img src="course6.jpg" alt="Course 6 Image"></li>
+            </ul>
+        </div>
+    </section>
+    <style>
+        .course-list li img {
+            width: 100%; 
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .course-list li img:hover {
+            transform: scale(1.1); 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+        }
+    </style>
+    <section id="admissions" class="section">
+        <div class="container">
+            <h2>Admissions</h2>
+            <p>At Vaas College of Engineering and Technology, we are committed to providing equal opportunities for all aspiring students. Our admission process is designed to be transparent, inclusive, and fair. To be eligible for admission to our programs, candidates must meet specific criteria, including successful completion of 10+2 for undergraduate programs and relevant bachelor's degrees for postgraduate programs. Our application process is straightforward, involving filling out an online form, paying the application fee, and submitting necessary documents. Admission is based on a combination of academic merit and performance in entrance examinations (if applicable). Shortlisted candidates will participate in interviews or counseling sessions. Stay updated with important admission dates on our website, including application start and deadline dates, entrance exam schedules (if applicable), and result announcements. If you have any questions or need assistance, please feel free to contact us. We are here to help you begin your educational journey at Vaas College of Engineering and Technology!</p>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to contact us:</p>
+            <address>
+                Vaas College of Engineering and Technology<br>
+                Address: 123 College Avenue, Mumbai, Maharashtra, 400001, India<br>
+                Phone: 9520806644, 9897600544, 8865015545<br>
+                Email: <a href="mailto:info@vaascollege.com">info@vaascollege.com</a>
+            </address>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Vaas College of Engineering and Technology. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
